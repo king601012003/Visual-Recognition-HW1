@@ -63,5 +63,5 @@ There are several hyperparameters in the code **156 ~ 163**.
 Set model_state = "eval", batch_size = 25, network = 8, ckpt_path = "/PATH/TO/YOUR/WEIGHT/FILE", model_weight = ""epoch_XX.pkl""
 
 ## Reference
-1. [Ranger](https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer).
-2. [Car Model Classification](https://github.com/kamwoh/Car-Model-Classification)
+1. [Efficientnet](https://github.com/lukemelas/EfficientNet-PyTorch).
+2. [Mix_up](https://github.com/facebookresearch/mixup-cifar10)
