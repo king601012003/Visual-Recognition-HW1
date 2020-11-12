@@ -62,11 +62,11 @@ To test models:
 Open the **model.py** with your own IDE and directly run it. 
 There are several hyperparameters in the code **156 ~ 163**.
 
-*model_state = "eval" 
-*batch_size = 25
-*network = 8
-*ckpt_path = "/PATH/TO/YOUR/WEIGHT/FILE"
-*model_weight = ""epoch_XX.pkl""
+*  model_state = "eval" 
+*  batch_size = 25
+*  network = 8
+*  ckpt_path = "/PATH/TO/YOUR/WEIGHT/FILE"
+*  model_weight = ""epoch_XX.pkl""
 
 ## Reference
 1. [Efficientnet](https://github.com/lukemelas/EfficientNet-PyTorch).
