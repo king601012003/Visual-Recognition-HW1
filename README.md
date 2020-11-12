@@ -18,14 +18,13 @@ To reproduct my submission without retrainig, do the following steps:
 
 ## Installation
 
-this code was trained and tested with Python 3.6.10 and Pytorch 1.2.0 (Torchvision 0.4.0) on Ubuntu 18.04
+this code was trained and tested with Python 3.6.10 and Pytorch 1.3.0 (Torchvision 0.4.1) on Ubuntu 18.04
 
 ```
 conda create -n hpa python=3.6
 conda activate hpa
 pip install -r requirements.txt
 ```
-and for the optimizer, I used [Ranger](https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer). The installation detail is in the link.
 
 ## Dataset Preparation
 ```
@@ -39,28 +38,18 @@ cs-t0828-2020-hw1
 │   ├── test_label.csv
 
 ```
-I seperate the original training data (11185 images) into two part. One for training (7485 images) and one for evaluating(3700 images). 
-The order of the training and evaluating data is correspond to the training_labels csv file.
+I seperate the original training data (11185 images) into two part. One for training (10000 images) and one for evaluating(1185 images). 
 
 ## Training
-To train models, run following commands.
-```
-$ python main.py
-```
-After that the terminal will request you to input which mode do you want to choose.
-Just type "train".
-you should also type which network you want to choose.
-0 for ResNext50
-1 for ResNet50
-```
-Current mode: train
-Net: 0
-```
+To train models:
+Open the **model.py** with your own IDE and directly run it. 
+There are several hyperparameters in the code **156 ~ 163**.
+
 The expected training times are:
 Model | GPUs | Image size | Training Epochs | Training Time
 ------------ | ------------- | ------------- | ------------- | -------------
-ResNext50 | 3x RTX 2080Ti | 400 x 400 | 10 | 30 minutes
-ResNet50 | 3x RTX 2080Ti | 400 x 400 | 10 | 30 minutes
+efficientnet | 1x RTX 2080Ti | 224 x 224 | 100 | 180 minutes
+
 
 ## Testing
 To train models, run following commands.
