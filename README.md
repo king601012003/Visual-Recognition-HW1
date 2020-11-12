@@ -51,7 +51,9 @@ Model | GPUs | Image size | Training Epochs | Training Time
 ------------ | ------------- | ------------- | ------------- | -------------
 efficientnet | 1x RTX 2080Ti | 224 x 224 | 100 | 180 minutes
 
-Set model_state = "train", batch_size = 25, network = 8
+Set *model_state = "train"
+    *batch_size = 25
+    *network = 8
 
 
 ## Testing
@@ -60,7 +62,11 @@ To test models:
 Open the **model.py** with your own IDE and directly run it. 
 There are several hyperparameters in the code **156 ~ 163**.
 
-Set model_state = "eval", batch_size = 25, network = 8, ckpt_path = "/PATH/TO/YOUR/WEIGHT/FILE", model_weight = ""epoch_XX.pkl""
+Set *model_state = "eval" 
+    *batch_size = 25
+    *network = 8
+    *ckpt_path = "/PATH/TO/YOUR/WEIGHT/FILE"
+    *model_weight = ""epoch_XX.pkl""
 
 ## Reference
 1. [Efficientnet](https://github.com/lukemelas/EfficientNet-PyTorch).
