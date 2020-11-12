@@ -13,7 +13,7 @@ To reproduct my submission without retrainig, do the following steps:
 1. [Installation](#installation)
 2. [Dataset Preparation](#Dataset-Preparation)
 3. [Training detail](#Training)
-4. [Testing](#Testing) detail.
+4. [Testing detail](#Testing)
 5. [Reference](#Reference)
 
 ## Installation
