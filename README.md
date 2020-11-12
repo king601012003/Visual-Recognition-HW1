@@ -2,8 +2,6 @@
 NCTU Visual Recognition Homework 1
 
 ## Hardware
-The following specs were used to create the original solution.
-
 Ubuntu 18.04.3 LTS
 Intel(R) Xeon(R) W-2133 CPU @ 3.60GHz
 1x GeForce RTX 2080 TI
