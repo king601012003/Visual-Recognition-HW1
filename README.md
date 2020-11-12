@@ -51,9 +51,9 @@ Model | GPUs | Image size | Training Epochs | Training Time
 ------------ | ------------- | ------------- | ------------- | -------------
 efficientnet | 1x RTX 2080Ti | 224 x 224 | 100 | 180 minutes
 
-Set *model_state = "train"
-    *batch_size = 25
-    *network = 8
+*  model_state = "train"
+*  batch_size = 25
+*  network = 8
 
 
 ## Testing
