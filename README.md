@@ -28,14 +28,16 @@ pip install -r requirements.txt
 and for the optimizer, I used [Ranger](https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer). The installation detail is in the link.
 
 ## Dataset Preparation
-All required files except images are already in cs-t0828-2020-hw1 directory.
 ```
 cs-t0828-2020-hw1
-  +- training_data
-  |  +-training_data
-  +- testing_data
-  |  +- testing_data
-  +- training_labels.csv
+├── HW1
+│   ├── data
+│   │   ├── Put all images here
+│   ├── train_img.csv
+│   ├── train_label.csv
+│   ├── test_img.csv
+│   ├── test_label.csv
+
 ```
 I seperate the original training data (11185 images) into two part. One for training (7485 images) and one for evaluating(3700 images). 
 The order of the training and evaluating data is correspond to the training_labels csv file.
