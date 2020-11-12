@@ -42,6 +42,7 @@ I seperate the original training data (11185 images) into two part. One for trai
 
 ## Training
 To train models:
+
 Open the **model.py** with your own IDE and directly run it. 
 There are several hyperparameters in the code **156 ~ 163**.
 
@@ -50,24 +51,16 @@ Model | GPUs | Image size | Training Epochs | Training Time
 ------------ | ------------- | ------------- | ------------- | -------------
 efficientnet | 1x RTX 2080Ti | 224 x 224 | 100 | 180 minutes
 
+Set model_state = "train", batch_size = 25, network = 8
+
 
 ## Testing
-To train models, run following commands.
-```
-$ python main.py
-```
-After that the terminal will request you to input which mode do you want to choose.
-Just type "test".
-you should also type which network you want to choose.
-0 for ResNext50
-1 for ResNet50
-Finally input the file path of the [checkpoint](https://drive.google.com/drive/u/1/folders/1CpQYyLGR_bD8CZfEU9ch3Z7ZL8IlMAO7). The checkpoint of ResNext50 is in the link.
-```
-Current mode: test
-Net: 0
-weight: ./checkpoint/best_result.pkl
-```
-After testing the result csv file will be generate in the data folder.
+To test models:
+
+Open the **model.py** with your own IDE and directly run it. 
+There are several hyperparameters in the code **156 ~ 163**.
+
+Set model_state = "eval", batch_size = 25, network = 8, ckpt_path = "/PATH/TO/YOUR/WEIGHT/FILE", model_weight = ""epoch_XX.pkl""
 
 ## Reference
 1. [Ranger](https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer).
